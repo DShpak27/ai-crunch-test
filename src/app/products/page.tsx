@@ -1,95 +1,79 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// pages/catalog.js
+import React from 'react';
+import { Grid, Box, Typography, Pagination } from '@mui/material';
+import { useRouter } from 'next/router';
 
-export default function Home() {
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+
+// Жестко закодированные данные продуктов
+const products: Product[] = [
+  { id: 1, name: 'Product 1', price: 9.99 },
+  { id: 2, name: 'Product 2', price: 14.99 },
+  { id: 3, name: 'Product 3', price: 19.99 },
+  // ... и так далее
+];
+
+type ProductCardProps = {
+  product: Product;
+};
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
+  <Box sx={{ p: 2, border: '1px solid grey', borderRadius: 2 }}>
+    <Typography variant="h6">{product.name}</Typography>
+    <Typography variant="body1">Price: ${product.price}</Typography>
+  </Box>
+);
+
+export const getServerSideProps = async ({ query }) => {
+  const { page = 1, limit = 10 } = query;
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + parseInt(limit);
+
+  const paginatedProducts = products.slice(startIndex, endIndex);
+
+  return {
+    props: {
+      products: paginatedProducts,
+      currentPage: parseInt(page),
+      totalPages: Math.ceil(products.length / limit),
+    },
+  };
+};
+
+const CatalogPage = ({ products, currentPage, totalPages }) => {
+  const router = useRouter();
+
+  const handlePageChange = (event, page) => {
+    router.push(`/catalog?page=${page}`);
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Typography variant="h4" gutterBottom>
+          Product Catalog
+        </Typography>
+      </Grid>
+      {products.map(product => (
+        <Grid item xs={12} sm={6} md={4} key={product.id}>
+          <ProductCard product={product} />
+        </Grid>
+      ))}
+      <Grid item xs={12}>
+        <Box display="flex" justifyContent="center" mt={2}>
+          <Pagination
+            count={totalPages}
+            page={currentPage}
+            onChange={handlePageChange}
+          />
+        </Box>
+      </Grid>
+    </Grid>
   );
-}
+};
+
+export default CatalogPage;

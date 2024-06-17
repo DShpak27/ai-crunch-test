@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from '@mui/material';
 import { AppBar, Nav, HomeButton, HomeLink } from './Header.styled';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <Container component={'header'}>
       <AppBar component={'div'}>
