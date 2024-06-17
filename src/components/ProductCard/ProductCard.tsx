@@ -1,35 +1,42 @@
-import React from 'react';
+'use client';
+import { Typography, Chip, Box, CardContent } from '@mui/material';
 import {
   Card,
-  CardActions,
-  CardContent,
-  CardDescription,
   CardMedia,
-  CardTitle,
   DetailsButton,
+  TopWrapper,
+  BottomWrapper,
 } from './ProductCard.styled';
 
-const ProductCard: React.FC<CourseCardProps> = ({
-  course: { id: courseId, title, description, imgUrl },
-}) => {
-  const handleButtonClick = () => {};
+import { Product } from '@/types/products';
 
+type ProductCardProps = { product: Partial<Product> };
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <Card>
-      <CardMedia
-        component="img"
-        image={imgUrl ? imgUrl : 'https://i.ibb.co/60VL44W/Placeholder-1.png'}
-        alt="Course Image"
-      />
+      <CardMedia component="img" image="/placeholder.svg" />
       <CardContent>
-        <CardTitle gutterBottom component="div">
-          {title}
-        </CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <TopWrapper>
+          <Box>
+            <Typography variant="h6" color="text.primary">
+              {product.name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {product.manufacturer}
+            </Typography>
+          </Box>
+          <Chip label={product.releaseYear} color="primary" size="small" />
+        </TopWrapper>
+        <BottomWrapper>
+          <Typography variant="body2" color="text.secondary">
+            {product.generation}
+          </Typography>
+          <DetailsButton variant="outlined" size="small">
+            Show Details
+          </DetailsButton>
+        </BottomWrapper>
       </CardContent>
-      <CardActions>
-        <DetailsButton onClick={handleButtonClick}>Details</DetailsButton>
-      </CardActions>
     </Card>
   );
 };

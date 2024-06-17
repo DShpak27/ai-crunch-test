@@ -288,3 +288,12 @@ export const products = [
       'The Magnavox Odyssey was the first commercially released home video game console. Released in 1972 by Magnavox, the Odyssey was based on a prototype created by Ralph Baer at Sanders Associates in 1968. The console was initially met with skepticism from retailers and consumers, but it eventually became a commercial success, selling over 100,000 units in its first year. The Odyssey came with a number of game cartridges, including Tennis, Table Tennis, Basketball, and Hockey. Players could also use overlays to change the appearance of the television screen, creating new games and environments. The Odyssey was a groundbreaking product that helped to lay the foundation for the video game industry as we know it today.',
   },
 ];
+
+const a = {
+  name: 'PlayStation 5',
+  manufacturer: 'Sony',
+  releaseYear: 2020,
+  generation: '9th',
+  ImgUrl:
+    'https://www.3brothersmobiles.com.au/cdn/shop/products/17317862309918_1200x1200.jpg?v=1619763788',
+};
