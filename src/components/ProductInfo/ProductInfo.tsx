@@ -1,13 +1,12 @@
 'use client';
+import { Box, Grid, CardMedia, useMediaQuery, useTheme } from '@mui/material';
 import {
-  Box,
-  Grid,
+  Wrapper,
+  Decor,
+  BackLink,
   Typography,
-  CardMedia,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material';
-import { Wrapper, Decor, BackLink } from './ProductInfo.styled';
+  SubInfo,
+} from './ProductInfo.styled';
 import { Product } from '@/types/products';
 import { useRouter } from 'next/navigation';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -41,7 +40,7 @@ const ProductInfo: React.FC<ProductCardProps> = ({ product }) => {
                   aspectRatio: '1/1',
                   objectFit: 'contain',
                   borderRadius: 2,
-                  maxHeight: isMobile ? 'auto' : '320px',
+                  maxHeight: isMobile ? 'auto' : '355px',
                   border: '1px solid rgba(195, 195, 195, 0.5)',
                   width: '100%',
                 }}
@@ -53,17 +52,11 @@ const ProductInfo: React.FC<ProductCardProps> = ({ product }) => {
                   {product.name}
                 </Typography>
                 <Box display="flex" alignItems="center" gap={1} mb={2}>
-                  <Typography color="text.secondary">
-                    {product.manufacturer}
-                  </Typography>
+                  <SubInfo>{product.manufacturer}</SubInfo>
                   <Decor />
-                  <Typography color="text.secondary">
-                    {product.releaseYear}
-                  </Typography>
+                  <SubInfo>{product.releaseYear}</SubInfo>
                   <Decor />
-                  <Typography color="text.secondary">
-                    {product.generation} Generation
-                  </Typography>
+                  <SubInfo>{product.generation} Generation</SubInfo>
                 </Box>
                 <Typography component="article" variant="body1" gutterBottom>
                   {product.article}

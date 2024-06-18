@@ -1,5 +1,10 @@
 import { styled } from '@mui/material/styles';
-import { Box, Button } from '@mui/material';
+import {
+  Box,
+  Button,
+  Typography as TypographyMui,
+  TypographyProps,
+} from '@mui/material';
 
 export const Wrapper = styled(Box)(({ theme }) => ({
   marginLeft: 'auto',
@@ -17,6 +22,14 @@ export const Decor = styled('span')(({ theme }) => ({
   width: theme.spacing(0.5),
   backgroundColor: theme.palette.text.secondary,
   borderRadius: '50%',
+}));
+
+export const Typography = styled(TypographyMui)<TypographyProps>({
+  color: 'rgba(0, 0, 0, 0.95)',
+  textAlign: 'justify',
+});
+export const SubInfo = styled(TypographyMui)<TypographyProps>(({ theme }) => ({
+  color: theme.palette.text.secondary,
 }));
 
 export const BackLink = styled(Button)(({ theme }) => ({

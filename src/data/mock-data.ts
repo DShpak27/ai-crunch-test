@@ -8,7 +8,7 @@ export const products = [
     imgUrl:
       'https://www.3brothersmobiles.com.au/cdn/shop/products/17317862309918_1200x1200.jpg?v=1619763788',
     article:
-      'The PlayStation 5 is Sony’s latest and greatest gaming console, boasting impressive specs and cutting-edge technology. Launched in November 2020, it quickly became a must-have for gamers worldwide. At the heart of the PS5 lies a powerful 8-core AMD Zen 2 CPU and a custom RDNA 2 GPU, delivering breathtaking graphics and lightning-fast performance. The console’s solid-state drive (SSD) eliminates lengthy loading times, allowing for seamless gameplay transitions. The DualSense controller is a game-changer, featuring haptic feedback and adaptive triggers that immerse players in their virtual worlds like never before.',
+      'The PlayStation 5 is Sony’s latest and greatest gaming console, boasting impressive specs and cutting-edge technology. Launched in November 2020, it quickly became a must-have for gamers worldwide. At the heart of the PS5 lies a powerful 8-core AMD Zen 2 CPU and a custom RDNA 2 GPU, delivering breathtaking graphics and lightning-fast performance.',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const products = [
     imgUrl:
       'https://cdn.shopify.com/s/files/1/0024/9803/5810/products/487923-Product-0-I-637369904292431894_e411d24a-c930-4b04-b860-3996cea242bd.jpg?v=1701906030',
     article:
-      'The Xbox Series X is Microsoft’s latest and most powerful gaming console, launched in November 2020. It boasts cutting-edge hardware that delivers breathtaking visuals and lightning-fast performance. At the heart of the Series X lies a custom AMD Zen 2 CPU and a powerful RDNA 2 GPU, allowing for up to 12 teraflops of processing power. This powerhouse console supports resolutions up to 8K, along with ray tracing capabilities for ultra-realistic lighting and graphics. The Xbox Velocity Architecture, featuring an NVMe SSD and hardware-accelerated decompression, ensures lightning-fast load times and seamless gameplay transitions.',
+      'The Xbox Series X is Microsoft’s latest and most powerful gaming console, launched in November 2020. It boasts cutting-edge hardware that delivers breathtaking visuals and lightning-fast performance. At the heart of the Series X lies a custom AMD Zen 2 CPU and a powerful RDNA 2 GPU, allowing for up to 12 teraflops of processing power. This powerhouse console supports resolutions up to 8K, along with ray tracing capabilities for ultra-realistic lighting and graphics.',
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const products = [
     imgUrl:
       'https://news.microsoft.com/wp-content/uploads/prod/sites/44/2019/07/20190725-1.jpg',
     article:
-      'The Xbox One is a powerful gaming console developed by Microsoft. It was released in November 2013 as the successor to the Xbox 360. The Xbox One features an AMD processor with 8 cores and 8GB of RAM, enabling impressive graphics and performance. It also includes a Blu-ray drive and supports 4K video playback. One of the key features is the Kinect sensor, which allows for motion and voice control of the console. The Xbox One has a sleek design with a matte black finish and can be positioned horizontally or vertically. It comes with a redesigned controller that has improved ergonomics and haptic feedback triggers. The console runs on the Windows 10 operating system and provides access to a wide range of games, apps, and multimedia content. Popular games for the Xbox One include Halo 5: Guardians, Gears of War 4, and Forza Horizon 4. With its powerful hardware and versatile capabilities, the Xbox One offers an immersive gaming and entertainment experience.',
+      'The Xbox One is a powerful gaming console developed by Microsoft. It was released in November 2013 as the successor to the Xbox 360. The Xbox One features an AMD processor with 8 cores and 8GB of RAM, enabling impressive graphics and performance. It also includes a Blu-ray drive and supports 4K video playback. One of the key features is the Kinect sensor, which allows for motion and voice control of the console. The Xbox One has a sleek design with a matte black finish and can be positioned horizontally or vertically. It comes with a redesigned controller that has improved ergonomics and haptic feedback triggers.',
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ export const products = [
     generation: '7th',
     imgUrl: 'https://m.media-amazon.com/images/I/81Xr4%20CBqmL.jpg',
     article:
-      'The Nintendo 3DS is a groundbreaking handheld gaming console released in 2011. It features glasses-free 3D capabilities, allowing gamers to experience immersive three-dimensional graphics without the need for special glasses. The console boasts a clamshell design with two screens, one of which is a 3.53-inch widescreen display capable of displaying stereoscopic 3D visuals. The other screen is a touch-enabled display used for control inputs and additional content. The 3DS is powered by a dual-core ARM11 MPCore processor and features wireless connectivity, motion sensors, and a built-in camera. It is backwards compatible with most Nintendo DS games, ensuring a vast library of titles at launch. Some of the most popular games for the 3DS include Super Mario 3D Land, The Legend of Zelda: Ocarina of Time 3D, and Pokémon X and Y. Despite facing competition from mobile gaming, the Nintendo 3DS has sold over 75 million units worldwide, solidifying its place as an iconic handheld console.',
+      'The Nintendo 3DS is a groundbreaking handheld gaming console released in 2011. It features glasses-free 3D capabilities, allowing gamers to experience immersive three-dimensional graphics without the need for special glasses. The console boasts a clamshell design with two screens, one of which is a 3.53-inch widescreen display capable of displaying stereoscopic 3D visuals. The other screen is a touch-enabled display used for control inputs and additional content. The 3DS is powered by a dual-core ARM11 MPCore processor and features wireless connectivity, motion sensors, and a built-in camera.',
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ export const products = [
     imgUrl:
       'https://images.prom.ua/4333364784_w640_h640_pristavka-sony-playstation.jpg',
     article:
-      'The PlayStation 3 was a groundbreaking gaming console released by Sony in 2006. It boasted cutting-edge hardware and impressive graphics capabilities for its time. Powered by the Cell Broadband Engine and featuring a Blu-ray disc drive, the PS3 offered an immersive gaming experience with high-definition visuals. Its online service, the PlayStation Network, allowed gamers to connect, compete, and access a vast library of digital content. The PS3’s controller, the SIXAXIS and later the DualShock 3, introduced motion-sensing technology, adding a new dimension to gameplay. Iconic titles like Uncharted, The Last of Us, and Metal Gear Solid 4 showcased the console’s capabilities, offering rich narratives and stunning visuals. Despite its initial high price and challenging architecture for developers, the PS3 eventually became a beloved console, selling over 87 million units worldwide. It paved the way for future generations of PlayStation consoles and left an indelible mark on the gaming industry.',
+      'The PlayStation 3 was a groundbreaking gaming console released by Sony in 2006. It boasted cutting-edge hardware and impressive graphics capabilities for its time. Powered by the Cell Broadband Engine and featuring a Blu-ray disc drive, the PS3 offered an immersive gaming experience with high-definition visuals. Its online service, the PlayStation Network, allowed gamers to connect, compete, and access a vast library of digital content. The PS3’s controller, the SIXAXIS and later the DualShock 3, introduced motion-sensing technology, adding a new dimension to gameplay.',
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ export const products = [
     generation: '7th',
     imgUrl: 'https://m.media-amazon.com/images/I/6171R6ucvIL._SL1000_.jpg',
     article:
-      'The Xbox 360, released by Microsoft in 2005, revolutionized the gaming industry with its powerful hardware and extensive online capabilities. The console featured a custom triple-core IBM PowerPC processor and an ATI graphics chip, enabling high-definition graphics and smooth gameplay. Its sleek design and customizable faceplates allowed for personalization, making it a hit with gamers. The Xbox 360 introduced Xbox Live, an online service that allowed players to connect, compete, and download games and content. This service became a cornerstone of the Xbox ecosystem, offering a seamless online multiplayer experience and a vast library of digital content. The console’s controller, known for its ergonomic design and responsive buttons, became a favorite among gamers.',
+      'The Xbox 360, released by Microsoft in 2005, revolutionized the gaming industry with its powerful hardware and extensive online capabilities. The console featured a custom triple-core IBM PowerPC processor and an ATI graphics chip, enabling high-definition graphics and smooth gameplay. Its sleek design and customizable faceplates allowed for personalization, making it a hit with gamers. The Xbox 360 introduced Xbox Live, an online service that allowed players to connect, compete, and download games and content.',
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ export const products = [
     imgUrl:
       'https://i0.wp.com/agrlv.com/wp-content/uploads/2019/05/wiiu-ss-blk.jpg?fit=800%2C800&ssl=1',
     article:
-      'The Wii U, released by Nintendo in 2012, is an innovative gaming console that bridges the gap between traditional console gaming and the burgeoning mobile gaming market. It features a unique GamePad controller with a 6.2-inch touchscreen, offering a second-screen experience that adds a new layer of interactivity. The console itself boasts an IBM PowerPC CPU and an AMD Radeon GPU, enabling HD graphics. The Wii U supports both physical discs and digital downloads, providing flexibility for gamers. Despite its underwhelming commercial success, the Wii U laid the groundwork for the wildly popular Nintendo Switch by introducing concepts like off-TV play. The Wii U is known for its strong first-party titles, including Super Mario 3D World, The Legend of Zelda: Breath of the Wild, and Mario Kart 8. ',
+      'The Wii U, released by Nintendo in 2012, is an innovative gaming console that bridges the gap between traditional console gaming and the burgeoning mobile gaming market. It features a unique GamePad controller with a 6.2-inch touchscreen, offering a second-screen experience that adds a new layer of interactivity. The console itself boasts an IBM PowerPC CPU and an AMD Radeon GPU, enabling HD graphics. The Wii U supports both physical discs and digital downloads, providing flexibility for gamers. Despite its underwhelming commercial success, the Wii U laid the groundwork for the wildly popular Nintendo Switch by introducing concepts like off-TV play.',
   },
   {
     id: 10,
@@ -126,7 +126,7 @@ export const products = [
     imgUrl:
       'https://d2e6ccujb3mkqf.cloudfront.net/badab78c-71e9-49d4-a7be-86f319bd322d-1_4e288852-3ff9-4379-917a-9b255ccad7e6.jpg',
     article:
-      'The Super Nintendo Entertainment System, commonly known as the SNES, is a 16-bit home video game console released by Nintendo in 1990. It is widely regarded as one of the greatest gaming consoles of all time, thanks to its advanced graphics, sound capabilities, and a vast library of classic games. The SNES features a custom Ricoh 5A22 CPU and a unique PPU (Picture Processing Unit) that enabled it to produce stunning graphics and special effects for its time. Some of the most beloved games in history, including Super Mario World, The Legend of Zelda: A Link to the Past, and Super Metroid, were released on the SNES. The console also introduced players to timeless franchises like Final Fantasy and Donkey Kong Country. With its robust design and backward compatibility with the NES, the SNES solidified Nintendo’s dominance in the video game industry and remains a favorite among collectors and retro gamers.',
+      'The Super Nintendo Entertainment System, commonly known as the SNES, is a 16-bit home video game console released by Nintendo in 1990. It is widely regarded as one of the greatest gaming consoles of all time, thanks to its advanced graphics, sound capabilities, and a vast library of classic games. The SNES features a custom Ricoh 5A22 CPU and a unique PPU (Picture Processing Unit) that enabled it to produce stunning graphics and special effects for its time. Some of the most beloved games in history, including Super Mario World, The Legend of Zelda: A Link to the Past, and Super Metroid, were released on the SNES. The console also introduced players to timeless franchises like Final Fantasy and Donkey Kong Country.',
   },
   {
     id: 13,

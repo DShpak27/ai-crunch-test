@@ -1,5 +1,11 @@
 import { Product } from '@/types/products';
 
+type PaginatedProductsData = {
+  products: Product[];
+  totalPages: number;
+  currentPage: number;
+};
+
 const baseUrl = 'http://localhost:3000/api';
 
 const fetcher = async (fn: Function) => {
@@ -16,12 +22,13 @@ const fetcher = async (fn: Function) => {
   }
 };
 
-export const getProducts = async () => {
-  const data: Product[] = await fetcher(
-    async () => await fetch(`${baseUrl}/products`)
+export const getProductsWithPagination = async (page: string) => {
+  const data = await fetcher(
+    async () =>
+      await fetch(`${baseUrl}/products?page=${page}`, { cache: 'no-store' })
   );
 
-  return data;
+  return data as PaginatedProductsData;
 };
 
 export const getProductById = async (id: string) => {
