@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { Typography, Chip, Box, CardContent } from '@mui/material';
 import {
   Card,
@@ -31,9 +32,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Typography variant="body2" color="text.secondary">
             {product.generation} generation
           </Typography>
-          <DetailsButton variant="outlined" size="small">
-            Show Details
-          </DetailsButton>
+          <Link href={`/products/${product.id}`} passHref>
+            <DetailsButton variant="outlined" size="small">
+              Show Details
+            </DetailsButton>
+          </Link>
         </BottomWrapper>
       </CardContent>
     </Card>
