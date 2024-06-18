@@ -4,7 +4,7 @@ export type Product = {
   manufacturer: string;
   releaseYear: number;
   generation: string;
-  ImgUrl: string;
+  imgUrl: string;
   bestGames: string[];
   article: string;
 };

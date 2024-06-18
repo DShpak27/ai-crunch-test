@@ -14,7 +14,7 @@ type ProductCardProps = { product: Partial<Product> };
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <Card>
-      <CardMedia component="img" image={product.ImgUrl} />
+      <CardMedia component="img" image={product.imgUrl} />
       <CardContent>
         <TopWrapper>
           <Box>
