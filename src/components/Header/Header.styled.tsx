@@ -6,12 +6,17 @@ import { LinkProps } from 'next/dist/client/link';
 
 export const AppBar = styled(AppBarMui)<AppBarProps>(({ theme }) => ({
   position: 'static',
-  padding: theme.spacing(1.5),
+  paddingTop: theme.spacing(1.5),
+  paddingBottom: theme.spacing(1.5),
+  paddingLeft: 0,
+  paddingRight: 0,
   backgroundColor: theme.palette.common.white,
   boxShadow: 'none',
 }));
 
 export const Nav = styled(Toolbar)<ToolbarProps>(({ theme }) => ({
+  paddingTop: theme.spacing(2.2),
+  paddingBottom: theme.spacing(2.2),
   backgroundColor: 'rgb(245, 245, 245)',
   borderRadius: theme.spacing(1),
   border: '1px solid rgba(195, 195, 195, 0.35)',

@@ -7,7 +7,6 @@ import {
   TopWrapper,
   BottomWrapper,
 } from './ProductCard.styled';
-
 import { Product } from '@/types/products';
 
 type ProductCardProps = { product: Partial<Product> };
@@ -15,7 +14,7 @@ type ProductCardProps = { product: Partial<Product> };
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <Card>
-      <CardMedia component="img" image="/placeholder.svg" />
+      <CardMedia component="img" image={product.ImgUrl} />
       <CardContent>
         <TopWrapper>
           <Box>
@@ -30,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </TopWrapper>
         <BottomWrapper>
           <Typography variant="body2" color="text.secondary">
-            {product.generation}
+            {product.generation} generation
           </Typography>
           <DetailsButton variant="outlined" size="small">
             Show Details
