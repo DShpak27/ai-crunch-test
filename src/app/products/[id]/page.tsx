@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
       `${product.name} history`,
     ],
     openGraph: {
-      title: `about ${product.name}`,
+      title: `${product.name} Details`,
       description: product.article,
       images: [
         {
