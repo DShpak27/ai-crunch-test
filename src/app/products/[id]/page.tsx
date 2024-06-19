@@ -12,5 +12,12 @@ export default async function ProductInfoPage({
   if (!product) {
     return <Typography variant="h5">Product not found</Typography>;
   }
-  return <ProductInfo product={product} />;
+  return (
+    <>
+      <h1 className="visually-hidden">
+        Detailed description of the game console
+      </h1>
+      <ProductInfo product={product} />
+    </>
+  );
 }

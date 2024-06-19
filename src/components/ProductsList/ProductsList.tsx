@@ -10,7 +10,7 @@ type ProductsListProps = {
 
 const ProductsList: React.FC<ProductsListProps> = ({ products }) => {
   return (
-    <Wrapper>
+    <Wrapper aria-label="game consoles list">
       <Grid container spacing={2}>
         {products.map(product => (
           <GridItem item xs={12} sm={6} md={4} lg={3} key={product.id}>

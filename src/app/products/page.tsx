@@ -12,6 +12,7 @@ const ProductsPage = async ({
 
   return (
     <>
+      <h1 className="visually-hidden">list of game consoles</h1>
       <ProductsList products={products} />
       <PaginationComponent totalPages={totalPages} currentPage={currentPage} />
     </>

@@ -24,8 +24,14 @@ export const Card = styled(StyledCard)<CardProps>(({ theme }) => ({
   userSelect: 'none',
 }));
 
-export const CardMedia = styled(StyledCardMedia)<CardMediaProps>({
+type CardMediaT = CardMediaProps & {
+  alt: string;
+  loading: string;
+};
+
+export const CardMedia = styled(StyledCardMedia)<CardMediaT>({
   maxHeight: 150,
+  height: 150,
   borderBottom: '1px solid rgba(0, 0, 0, 0.15)',
   objectFit: 'contain',
 });

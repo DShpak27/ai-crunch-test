@@ -1,15 +1,16 @@
 'use client';
 import React from 'react';
 import { Container } from '@mui/material';
-import { AppBar, Nav, HomeButton, HomeLink } from './Header.styled';
+import { AppBar, Nav, HomeLink } from './Header.styled';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
     <Container component={'header'}>
       <AppBar component={'div'}>
-        <Nav component={'nav'}>
-          <HomeLink href="/products">
-            <HomeButton variant="contained">Home</HomeButton>
+        <Nav role="navigation" aria-label="Navigation menu" component={'nav'}>
+          <HomeLink href="/products" aria-label="Home page">
+            <Image src="/logo.png" alt="logo" width={90} height={56} />
           </HomeLink>
         </Nav>
       </AppBar>

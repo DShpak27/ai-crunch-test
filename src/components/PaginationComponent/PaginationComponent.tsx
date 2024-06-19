@@ -18,6 +18,8 @@ const PaginationComponent: React.FC<PaginationComponentProps> = ({
   };
   return (
     <Pagination
+      role="navigation"
+      aria-label="Pagination"
       count={totalPages}
       page={currentPage}
       onChange={handlePageChange}

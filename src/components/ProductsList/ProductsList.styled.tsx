@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import { Grid, GridProps } from '@mui/material';
 
-export const Wrapper = styled('div')(({ theme }) => ({
+export const Wrapper = styled('section')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   padding: theme.spacing(2),

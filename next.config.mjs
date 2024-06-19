@@ -1,5 +1,26 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  //   images: {
+  //     domains: [
+  //       'www.3brothersmobiles.com.au',
+  //       'cdn.shopify.com',
+  //       'assets.nintendo.com',
+  //       'images.prom.ua',
+  //       'news.microsoft.com',
+  //       'm.media-amazon.com',
+  //       'images.prom.ua',
+  //       'i0.wp.com',
+  //       'ae04.alicdn.com',
+  //       'd2e6ccujb3mkqf.cloudfront',
+  //       '455cash.com',
+  //       'upload.wikimedia.org',
+  //       'i5.walmartimages.com',
+  //       'vest.in.ua',
+  //       'img.redbull.com',
+  //       'www.jbhifi.com.au',
+  //     ],
+  //   },
+};
 
 export default nextConfig;
 
