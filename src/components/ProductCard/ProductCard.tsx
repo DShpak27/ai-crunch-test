@@ -1,14 +1,14 @@
 'use client';
 import Link from 'next/link';
 import { Typography, Chip, Box, CardContent } from '@mui/material';
+import { Product } from '@/types/products';
 import {
-  Card,
-  CardMedia,
   DetailsButton,
   TopWrapper,
   BottomWrapper,
+  Card,
+  CardMedia,
 } from './ProductCard.styled';
-import { Product } from '@/types/products';
 
 type ProductCardProps = { product: Partial<Product> };
 

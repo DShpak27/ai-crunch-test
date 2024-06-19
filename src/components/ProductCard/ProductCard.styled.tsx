@@ -14,6 +14,7 @@ import {
 } from '@mui/material';
 
 export const Card = styled(StyledCard)<CardProps>(({ theme }) => ({
+  maxHeight: 268,
   maxWidth: 345,
   borderRadius: theme.spacing(1),
   boxShadow: theme.shadows[1],
@@ -24,7 +25,7 @@ export const Card = styled(StyledCard)<CardProps>(({ theme }) => ({
 }));
 
 export const CardMedia = styled(StyledCardMedia)<CardMediaProps>({
-  height: '160px',
+  maxHeight: 150,
   borderBottom: '1px solid rgba(0, 0, 0, 0.15)',
   objectFit: 'contain',
 });
@@ -33,7 +34,7 @@ export const TopWrapper = styled(Box)<BoxProps>(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  marginBottom: theme.spacing(1.3),
+  marginBottom: theme.spacing(0.5),
 }));
 
 export const BottomWrapper = styled(Box)<BoxProps>({

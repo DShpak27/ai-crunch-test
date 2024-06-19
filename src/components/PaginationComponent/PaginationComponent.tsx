@@ -1,7 +1,6 @@
 'use client';
-
-import { Pagination } from '@mui/material';
 import { ChangeEvent } from 'react';
+import { Pagination } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
 type PaginationComponentProps = {
