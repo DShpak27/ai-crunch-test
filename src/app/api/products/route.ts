@@ -4,6 +4,14 @@ import { products } from '@/data/mock-data';
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
+
+    //only for sitemap generation ---------
+    if (searchParams.get('page')?.toString() === 'all') {
+      return NextResponse.json({
+        products,
+      });
+    } // -----------------------------------
+
     const page = searchParams.get('page')
       ? parseInt(searchParams.get('page') || '')
       : 1;

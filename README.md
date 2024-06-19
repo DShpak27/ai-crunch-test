@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Anyhr.io-test
+
+This is a Next.js project designed to showcase modern web development practices, including server-side rendering, static site generation, API routes and SEO.
+
+## Description
+
+This project is built using Next.js, a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
 
 ## Getting Started
 
-First, run the development server:
+### Dependencies
+
+- Node.js
+- npm or yarn
+
+### Installing
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Running the Development Server
+To start the development server, run:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
+Learn More
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js Documentation - learn about Next.js features and API.
+Learn Next.js - an interactive Next.js tutorial.
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+License
+This project is open source and available under the MIT License.
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This README template provides a basic structure for your Next.js project, including sections for getting started, project structure, learning resources, and contributing. Adjust the content as necessary to fit the specifics of your project.
+```

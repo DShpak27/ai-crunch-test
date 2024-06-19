@@ -1,4 +1,4 @@
-import { Product } from '@/types/products';
+import { Product } from '@/types/product';
 
 type PaginatedProductsData = {
   products: Product[];
@@ -6,7 +6,8 @@ type PaginatedProductsData = {
   currentPage: number;
 };
 
-const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL;
+const baseUrl =
+  process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000/api';
 
 const fetcher = async (fn: Function) => {
   try {

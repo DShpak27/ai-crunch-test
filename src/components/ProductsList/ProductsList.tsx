@@ -1,7 +1,7 @@
 'use client';
 import ProductCard from '../ProductCard';
 import { Wrapper, GridItem } from './ProductsList.styled';
-import { Product } from '@/types/products';
+import { Product } from '@/types/product';
 import { Grid } from '@mui/material';
 
 type ProductsListProps = {

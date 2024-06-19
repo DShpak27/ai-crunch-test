@@ -7,7 +7,7 @@ import {
   Typography,
   SubInfo,
 } from './ProductInfo.styled';
-import { Product } from '@/types/products';
+import { Product } from '@/types/product';
 import { useRouter } from 'next/navigation';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 

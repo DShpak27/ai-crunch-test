@@ -1,5 +1,5 @@
 import * as jsonld from 'jsonld';
-import { Product } from '@/types/products';
+import { Product } from '@/types/product';
 
 type ProductForJsonLd = Partial<Product>;
 

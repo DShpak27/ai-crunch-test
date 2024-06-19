@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Typography, Chip, Box, CardContent } from '@mui/material';
-import { Product } from '@/types/products';
+import { Product } from '@/types/product';
 import {
   DetailsButton,
   TopWrapper,
