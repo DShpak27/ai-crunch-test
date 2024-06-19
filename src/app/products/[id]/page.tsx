@@ -2,7 +2,6 @@ import ProductInfo from '@/components/ProductInfo';
 import { Typography } from '@mui/material';
 import { getProductById } from '@/services/api';
 import styles from './page.module.css';
-import { generateProductJsonLd } from '@/app/utils/generateProductJsonLd ';
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const product = await getProductById(params.id);
@@ -36,7 +35,16 @@ export default async function ProductInfoPage({
   params: { id: string };
 }) {
   const product = await getProductById(params.id);
-  const jsonLd = await generateProductJsonLd(product);
+  const jsonLd = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: product.name,
+    description: product.article,
+    brand: {
+      '@type': 'Brand',
+      name: product.manufacturer,
+    },
+  };
 
   if (!product) {
     return <Typography variant="h5">Product not found</Typography>;

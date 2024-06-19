@@ -34,8 +34,9 @@ export const getProductsWithPagination = async (page: string) => {
 
 export const getProductById = async (id: string) => {
   const data = await fetcher(
-    async () =>
-      await fetch(`${baseUrl}/products/${id}`, { next: { revalidate: 3600 } })
+    async () => await fetch(`${baseUrl}/products/${id}`, { cache: 'no-store' })
+    // async () =>
+    //   await fetch(`${baseUrl}/products/${id}`, { next: { revalidate: 3600 } })
   );
   return data.product as Product;
 };

@@ -5,6 +5,8 @@ import { AppBar, Nav, HomeLink } from './Header.styled';
 import Image from 'next/image';
 import { Route } from '@/constants';
 
+console.log(process.env.NEXT_PUBLIC_SERVER_URL);
+
 const Header: React.FC = () => {
   return (
     <Container component={'header'}>

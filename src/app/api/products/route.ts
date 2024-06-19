@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
 
-    //only for sitemap generation ---------
+    //for sitemap generation --------------
     if (searchParams.get('page')?.toString() === 'all') {
       return NextResponse.json({
         products,

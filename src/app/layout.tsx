@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/Header';
+// External libraries
 import { Container } from '@mui/material';
+import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+import Header from '@/components/Header';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,7 +39,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true}>
+      {/* <html lang="en" suppressHydrationWarning={true}> */}
+      <body className={inter.className}>
         <Header />
         <Container component="main">{children}</Container>
       </body>
