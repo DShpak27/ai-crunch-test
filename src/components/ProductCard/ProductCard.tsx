@@ -9,6 +9,7 @@ import {
   Card,
   CardMedia,
 } from './ProductCard.styled';
+import { Route } from '@/constants';
 
 type ProductCardProps = { product: Partial<Product> };
 
@@ -19,12 +20,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         component="img"
         image={product.imgUrl}
         alt={`${product.name} gaming console`}
+        title={`${product.name} gaming console`}
         loading="lazy"
       />
       <CardContent>
         <TopWrapper>
           <Box>
-            <Typography variant="h6" color="text.primary">
+            <Typography variant="h6" color="text.primary" component="h2">
               {product.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
@@ -37,8 +39,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Typography variant="body2" color="text.secondary">
             {product.generation} generation
           </Typography>
-          <Link href={`/products/${product.id}`} passHref>
-            <DetailsButton variant="outlined" size="small">
+          <Link href={`${Route.PRODUCTS}/${product.id}`} passHref>
+            <DetailsButton
+              variant="outlined"
+              size="small"
+              aria-label={`Learn more about ${product.name}`}
+            >
               Show Details
             </DetailsButton>
           </Link>

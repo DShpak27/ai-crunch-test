@@ -15,13 +15,16 @@ import {
 
 export const Card = styled(StyledCard)<CardProps>(({ theme }) => ({
   maxHeight: 268,
-  maxWidth: 345,
   borderRadius: theme.spacing(1),
   boxShadow: theme.shadows[1],
   border: '1px solid rgba(0, 0, 0, 0.15)',
   backgroundColor: theme.palette.background.paper,
   overflow: 'hidden',
   userSelect: 'none',
+
+  [theme.breakpoints.up('xs')]: {
+    maxWidth: 345,
+  },
 }));
 
 type CardMediaT = CardMediaProps & {

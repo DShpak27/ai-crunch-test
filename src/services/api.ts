@@ -6,7 +6,7 @@ type PaginatedProductsData = {
   currentPage: number;
 };
 
-const baseUrl = 'http://localhost:3000/api';
+const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL;
 
 const fetcher = async (fn: Function) => {
   try {

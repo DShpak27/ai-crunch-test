@@ -6,7 +6,7 @@ import {
   TypographyProps,
 } from '@mui/material';
 
-export const Wrapper = styled(Box)(({ theme }) => ({
+export const Wrapper = styled('section')(({ theme }) => ({
   marginLeft: 'auto',
   marginRight: 'auto',
   paddingTop: theme.spacing(4),
